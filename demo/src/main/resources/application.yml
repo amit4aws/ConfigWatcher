@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: demo-service
+  cloud:
+    kubernetes:
+      discovery: 
+        enabled: true
+        all-namespaces: true
+      # config:
+      #   enabled: true
+      #   name: demo-service
+      #   namespace: namespace1
+      #   sources:
+      #     - namespace: namespace1
+      #       name: demo-service
+      reload:
+        enabled: true
+        mode: event
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+    endpoint:
+      restart:
+        enabled: true

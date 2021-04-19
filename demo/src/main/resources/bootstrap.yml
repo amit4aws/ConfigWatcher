@@ -1,0 +1,8 @@
+
+      # secrets:
+      #   name: item-service
+      #   enableApi: true
+      #   enabled: true
+      #   namespace: namespace1
+      #   sources:
+      #     - name: item-service #had not been set, the Secret named s1 would be looked up in the namespace that the application runs.

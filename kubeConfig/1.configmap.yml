@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-service
+  namespace: namespace1
+  labels:
+    spring.cloud.kubernetes.config: "true"
+data:
+  application.properties: |-
+    bean.message=Hello World!
+    another.property=value
